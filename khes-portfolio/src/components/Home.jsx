@@ -1,19 +1,19 @@
 import React from "react";
-import "./Home.css";
+import "../css-files/Home.css";
 
 const Home = () => {
   return (
     <>
-      <div class="home-page">
-        <section>
-          <div class="grid-column-one">
+      <div className="home-page">
+        <section className="grid-column-one">
+          <div >
             <img
-              class="social-media-icon"
+              className="social-media-icon"
               src="../src/images/linkedin.svg"
               alt="linkedin"
             />
             <img
-              class="social-media-icon"
+              className="social-media-icon"
               src="../src/images/instagram.svg"
               alt="instagram"
             />
@@ -22,7 +22,7 @@ const Home = () => {
         <section>
           <div>
             <h1>Khes Adderley</h1>
-            <h2>Junior Web Developer</h2>
+            <h2>Junior Full-Stack Web Developer</h2>
             <p>
               I am currently seeking employment as a Junior Web Developer in an
               organization that allows me the opportunity to apply my technical
@@ -32,14 +32,14 @@ const Home = () => {
             <br />
             <button>
               Say Hello
-              <img class="send" src="../src/images/send.svg" alt="Send" />
+              <img className="send" src="../src/images/send.svg" alt="Send" />
             </button>
           </div>
         </section>
         <section>
           <div>
             <img
-              class="headshot"
+              className="headshot"
               src="../src/images/khes-resume-headshot.png"
               alt="headshot"
             />

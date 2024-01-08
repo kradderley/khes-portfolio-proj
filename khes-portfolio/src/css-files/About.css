@@ -1,0 +1,14 @@
+.about-container {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.about-heading {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  font-size: 35px;
+}
+
+p.about-paragragh-one {
+margin: 0px; 
+}

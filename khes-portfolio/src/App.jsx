@@ -1,13 +1,14 @@
 import React from "react";
 import Menu from "./components/Menu";
 import Home from "./components/Home";
-import Pages from "./components/Pages";
+import About from "./components/About";
 
 const App = () => {
   return (
     <>
       <Menu />
-      <Pages />
+      <Home/>
+      <About/>
     </>
   );
 };
