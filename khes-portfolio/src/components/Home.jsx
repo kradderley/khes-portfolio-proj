@@ -6,7 +6,7 @@ const Home = () => {
     <>
       <div className="home-page">
         <section className="grid-column-one">
-          <div >
+          <div>
             <img
               className="social-media-icon"
               src="../src/images/linkedin.svg"
@@ -22,7 +22,7 @@ const Home = () => {
         <section>
           <div>
             <h1>Khes Adderley</h1>
-            <h2>Junior Full-Stack Web Developer</h2>
+            <h2>Junior Web Developer</h2>
             <p>
               I am currently seeking employment as a Junior Web Developer in an
               organization that allows me the opportunity to apply my technical
@@ -35,6 +35,8 @@ const Home = () => {
               <img className="send" src="../src/images/send.svg" alt="Send" />
             </button>
           </div>
+          <br />
+          <p>Tech Stack</p>
         </section>
         <section>
           <div>

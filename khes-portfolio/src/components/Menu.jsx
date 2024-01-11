@@ -12,7 +12,7 @@ const Menu = () => {
         <div className="info-bar">
           <ul>
             <li>Home</li>
-            <li>About Me</li>
+            <li>About</li>
             <li>Skills</li>
             <li>Projects</li>
             <li>Contact</li>

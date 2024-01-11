@@ -5,8 +5,27 @@ const About = () => {
   return (
     <>
       <div className="about-container">
-        <h2 className="about-heading">About Me</h2>
-        <p className="about-paragraph-one">Brief Introduction</p>
+        <h1 className="about-heading">About Me</h1>
+        <h3 className="about-paragraph-one">Brief Introduction</h3>
+        <div className="about-grid-container">
+          <img
+            className="about-grid-column-one"
+            src="../src/images/girl-web-developer.svg"
+            alt="web-developer"
+          />
+          <section className="about-grid-column-two">
+            <h3>A committed web developer based in Paris, France</h3>
+            <p>
+              {" "}
+              As a Junior Front-End Developer, my goal is to create and maintain
+              responsive websites that offer a seamless user experience. My
+              skills in HTML, CSS/SCSS, Javascript and React, among others, I am
+              capable of working in cross-functional teams to produce top-notch
+              web applications. I am excited to display my ability to craft
+              dynamic interfaces while writing clean and optimized code.{" "}
+            </p>
+          </section>
+        </div>
       </div>
     </>
   );
