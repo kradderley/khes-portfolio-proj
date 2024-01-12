@@ -1,61 +1,81 @@
-.about-container,
-.skills-container {
-  margin-top: 100px;
-  margin-left: 100px;
-  margin-right: 100px;
-  text-align: center;
-}
+@media screen and (min-width: 480px) {
+  .about-container,
+  .skills-container {
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+  }
 
-.about-heading,
-.skills-heading {
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-  font-size: 35px;
-}
+  .about-heading,
+  .skills-heading {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-size: 35px;
+  }
 
-p.about-paragragh-one {
-  margin: 0px;
-}
+  p.about-paragragh-one {
+    margin: 0px;
+  }
 
-.about-grid-container,
-.skills-grid-container {
-  display: grid;
-  margin-left: 100px;
-  margin-right: 100px;
-  grid-template-columns: 2fr 2fr;
-}
+  .about-grid-container,
+  .skills-grid-container {
+    display: grid;
+    margin-left: 100px;
+    margin-right: 100px;
+    grid-template-columns: 2fr 2fr;
+  }
 
-.skills-grid-container {
-  margin-top: 50px;
-}
+  .skills-grid-container {
+    margin-top: 50px;
+  }
 
-.about-grid-column-one {
-  justify-self: end;
-}
+  .about-grid-column-one {
+    justify-self: end;
+  }
 
-.about-grid-column-two {
-  padding-top: 100px;
-  max-width: 500px;
-}
+  .about-grid-column-two {
+    padding-top: 100px;
+    max-width: 500px;
+  }
 
-/* .front-end-container, 
+  /* .front-end-container, 
 .back-end-container {
   display: flex;
   flex-direction: column; 
 } */
 
+  .skills-list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+  }
 
-.skills-list {
-  display: flex;
-  flex-direction: column;
-  padding-left: 0;
+  section h4 {
+    font-size: 20px;
+  }
+
+  section ul.skills-list li {
+    padding: 20px;
+  }
 }
 
-section h4 {
-  font-size: 20px;
-}
+@media screen and (max-width: 480px) {
+  .about-container,
+  .skills-container {
+    margin-top: 100px;
+    text-align: center;
+  }
 
-section ul.skills-list li {
-  padding: 20px; 
+  .about-heading,
+  .skills-heading {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-size: 30px;
+  }
 
+  .about-grid-container {
+    display: flex; 
+    flex-direction: column; 
+  }
 }
