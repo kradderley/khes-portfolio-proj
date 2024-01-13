@@ -6,19 +6,21 @@ const Skills = () => {
     <>
       <div className="skills-container">
         <h1 className="skills-heading"> Skills</h1>
-        <h3> My technical level</h3>
+        <h3 className="skills-subheading"> My technical level</h3>
         <div className="skills-grid-container">
-          <section className="front-end-containter">
+          <section className="front-end-container">
             <h4>Front-End</h4>
             <ul className="skills-list">
               <li>
-              <img src="../src/images/html.svg" />
+                <img src="../src/images/html.svg" />
                 <br />
-                HTML</li>
+                HTML
+              </li>
               <li>
-              <img src="../src/images/css.svg" />
+                <img src="../src/images/css.svg" />
                 <br />
-                CSS</li>
+                CSS
+              </li>
               <li>
                 <img src="../src/images/javascript.svg" />
                 <br />
@@ -30,34 +32,40 @@ const Skills = () => {
                 React
               </li>
               <li>
-              <img src="../src/images/bootstrap.svg" />
+                <img src="../src/images/bootstrap.svg" />
                 <br />
-                Bootstrap</li>
+                Bootstrap
+              </li>
               <li>
-              <img src="../src/images/git.svg" />
+                <img src="../src/images/git.svg" />
                 <br />
-                Git</li>
+                Git
+              </li>
             </ul>
           </section>
           <section className="back-end-container">
             <h4>Back-End</h4>
             <ul className="skills-list">
               <li>
-              <img src="../src/images/php.svg" />
+                <img src="../src/images/php.svg" />
                 <br />
-                PHP</li>
+                PHP
+              </li>
               <li>
-              <img src="../src/images/sql.svg" />
+                <img src="../src/images/sql.svg" />
                 <br />
-                SQL</li>
+                SQL
+              </li>
               <li>
-              <img src="../src/images/express-node.svg" />
+                <img src="../src/images/express-node.svg" />
                 <br />
-                Express/Node.js</li>
+                Express/Node.js
+              </li>
               <li>
-              <img src="../src/images/ruby-rails.svg" />
+                <img src="../src/images/ruby-rails.svg" />
                 <br />
-                Ruby on Rails</li>
+                Ruby on Rails
+              </li>
             </ul>
           </section>
         </div>

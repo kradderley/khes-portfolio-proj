@@ -6,14 +6,14 @@ const About = () => {
     <>
       <div className="about-container">
         <h1 className="about-heading">About Me</h1>
-        <h3 className="about-paragraph-one">Brief Introduction</h3>
+        <h3 className="about-subheading">Introduction</h3>
         <div className="about-grid-container">
           <img
-            className="about-grid-column-one"
+            className="about-image"
             src="../src/images/girl-web-developer.svg"
             alt="web-developer"
           />
-          <section className="about-grid-column-two">
+          <section className="about-info-section">
             <h3>A committed web developer based in Paris, France</h3>
             <p>
               {" "}

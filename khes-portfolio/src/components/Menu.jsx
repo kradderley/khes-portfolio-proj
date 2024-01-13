@@ -1,13 +1,14 @@
 import React from "react";
-import "../css-files/Menu.css"; 
-import { NavLink, Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import "../css-files/Menu.css";
 
 const Menu = () => {
   return (
     <>
       <div className="menu-bar">
         <nav>
-          <p> Khes Adderley</p>
+          <p className="menu-header-name"> Khes Adderley</p>
         </nav>
         <div className="info-bar">
           <ul>
@@ -17,6 +18,9 @@ const Menu = () => {
             <li>Projects</li>
             <li>Contact</li>
           </ul>
+        </div>
+        <div className="menu-bar-icon">
+          <FontAwesomeIcon icon={faBars} />
         </div>
       </div>
     </>
