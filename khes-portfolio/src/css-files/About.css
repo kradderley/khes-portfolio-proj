@@ -1,6 +1,16 @@
-@media screen and (max-width: 480px) {
+li {
+  list-style-type: none;
+}
+
+.projects-list {
+  padding-left: 0px; 
+}
+
+@media screen and (max-width: 600px) {
   .about-container,
-  .skills-container {
+  .skills-container,
+  .projects-container,
+  .contact-container {
     margin-top: 100px;
     margin-left: 10px;
     margin-right: 10px;
@@ -8,22 +18,39 @@
   }
 
   .about-heading,
-  .skills-heading {
+  .skills-heading,
+  .projects-heading, 
+  .contact-heading {
     margin-bottom: 0px;
     padding-bottom: 0px;
     font-size: 25px;
   }
 
   .about-subheading,
-  .skills-subheading {
+  .skills-subheading,
+  .projects-subheading, 
+  .contact-subheading {
     margin-top: 0px;
     margin-bottom: 0px;
   }
 
-  .about-grid-container {
+  .about-grid-container, 
+  .projects-grid-container,
+  .contact-grid-container {
     display: flex;
     flex-direction: column;
+
   }
+
+ .contact-item {
+  margin: 0 auto; 
+  width: 200px; 
+  margin-top: 20px; 
+  margin-bottom: 20px; 
+  padding: 20px 20px 20px 20px;
+  border: 1px solid black;  
+  border-radius: 5%; 
+ }
 
   .about-info-section {
     padding-left: 15px;
@@ -32,34 +59,34 @@
 
   ul.skills-list li {
     list-style-type: none;
-    padding-top: 15px; 
-    padding-bottom: 5px; 
+    padding-top: 15px;
+    padding-bottom: 5px;
   }
 
-  section.front-end-container h4, 
+  section.front-end-container h4,
   section.back-end-container h4 {
-    font-size: 20px; 
-    margin-bottom: 0px; 
+    font-size: 20px;
+    margin-bottom: 0px;
   }
 
   .front-end-container,
   .back-end-container {
-    display: grid; 
+    display: grid;
   }
 
   .front-end-container {
-    margin-bottom: 25px; 
+    margin-bottom: 25px;
   }
+ 
 
   .skills-list {
     padding-left: 0px;
-    display: grid; 
+    display: grid;
     grid-template-columns: 2fr 2fr;
-
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 600px) {
   .about-container,
   .skills-container {
     margin-top: 100px;
@@ -99,7 +126,6 @@
     padding-top: 100px;
     max-width: 500px;
   }
-
 
   .skills-list {
     display: flex;
