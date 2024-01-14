@@ -1,8 +1,13 @@
-@media screen and (max-width: 600px) {
+.home-page {
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 800px) {
   .home-page {
-    margin-top: 50px;
-    margin-left: 30px;
-    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
   }
 
   .home-heading {
@@ -37,7 +42,7 @@
     border-radius: 30%;
   }
 
-  .grid-column-one {
+  .social-media-grid-column {
     display: none;
   }
 
@@ -55,20 +60,29 @@
 
 @media screen and (min-width: 520px) {
   .headshot {
-    width: 300px; 
+    width: 300px;
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
+  .social-media-container {
+    display: none;
+  }
+
   .home-page {
     margin-top: 50px;
     display: grid;
     grid-template-columns: 1fr 4fr 3fr;
-    grid-gap: 50px;
+    grid-gap: 10px;
     align-content: center;
+    margin-top: 50px;
   }
 
-  .grid-column-one {
+  /* section.social-media-grid-column div {
+    overflow: auto; 
+  } */
+
+  .social-media-grid-column {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,7 +94,12 @@
     height: 32px;
   }
 
-  section div h1 {
+  .home-info-grid-column {
+    padding-top: 50px;
+    padding-right: 10px;
+  }
+
+  div.home-info-grid-column h1 {
     margin-top: 25px;
   }
 
@@ -90,8 +109,11 @@
   }
 
   .headshot {
-    width: auto;
-    height: 375px;
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-left: 10px; 
+    width: 300px;
+    height: auto;
     border: 5px solid black;
     border-radius: 40%;
   }

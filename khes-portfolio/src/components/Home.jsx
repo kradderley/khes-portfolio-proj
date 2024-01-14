@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <>
       <div className="home-page">
-        <section className="grid-column-one">
+        <section className="social-media-grid-column">
           <div>
             <img
               className="social-media-icon"
@@ -20,14 +20,13 @@ const Home = () => {
           </div>
         </section>
         <section>
-          <div>
+          <div className="home-info-grid-column">
             <h1 className="home-heading">Khes Adderley</h1>
             <h2 className="home-role-heading">Junior Web Developer</h2>
             <p className="home-statement">
               I am currently seeking employment as a Junior Web Developer in an
-              organization that allows me showcase my technical
-              skills, while offering the room for growth and professional
-              development.
+              organization that allows me showcase my technical skills, while
+              offering the room for growth and professional development.
             </p>
             <br />
             <div className="home-button-container">
@@ -48,7 +47,7 @@ const Home = () => {
           </div>
         </section>
         <section>
-        <div className="social-media-container">
+          <div className="social-media-container">
             <img
               className="social-media-icon"
               src="../src/images/linkedin.svg"
