@@ -38,7 +38,7 @@ const Home = () => {
           </div>
         </section>
         <section>
-          <div>
+          <div className="resume-headshot">
             <img
               className="headshot"
               src="../src/images/khes-resume-headshot.png"

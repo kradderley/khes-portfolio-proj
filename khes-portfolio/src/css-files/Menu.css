@@ -44,7 +44,7 @@ div.info-bar ul li {
     bottom: 2.5px;
     left: 5px;
     margin-left: auto;
-    margin-right: 0;
+    margin-right: 20px;
   }
 
   div.info-bar ul {
@@ -64,8 +64,11 @@ div.info-bar ul li {
 }
 
 @media screen and (min-width: 1100px) {
-  .info-bar {
-    margin-right: 20px; 
-
+  .menu-header-name {
+    top: 1px;
+  }
+  
+  div.info-bar ul li {
+    font-size: 18px; 
   }
 }
