@@ -7,8 +7,6 @@ import "../css-files/Menu.css";
 const Menu = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
-  
-
   return (
     <>
       <div className="menu-bar">

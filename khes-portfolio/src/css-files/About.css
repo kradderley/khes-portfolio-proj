@@ -16,6 +16,10 @@ li {
   text-align: center;
 }
 
+.about-container {
+  margin-top: 0px; 
+}
+
 .about-heading,
 .skills-heading,
 .projects-heading,
@@ -59,7 +63,8 @@ ul.skills-list li {
   grid-template-columns: 2fr 2fr;
 }
 
-.projects-grid-container {
+.projects-grid-container, 
+.contact-grid-container {
   margin-top: 50px;
 }
 
@@ -132,7 +137,7 @@ ul.skills-list li {
   .project-one,
   .project-two,
   .project-three {
-    padding-bottom: 5px;
+    padding-bottom: 5px; 
   }
 }
 
@@ -182,17 +187,13 @@ ul.skills-list li {
     max-width: 500px;
   }
 
-  .contact-grid-container {
-    display: flex;
-    flex-direction: row;
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
+  
+ 
 }
 
 @media screen and (min-width: 1000px) {
   .about-container {
-    margin-top: 250px;
+    /* margin-top: 250px; */
     margin-left: 150px;
     margin-right: 150px;
     margin-bottom: 250px;
@@ -204,7 +205,8 @@ ul.skills-list li {
   }
 
   .skills-container,
-  .projects-container {
+  .projects-container, 
+  .contact-container {
     margin-top: 250px;
     margin-left: 90px;
     margin-right: 90px;
@@ -231,4 +233,13 @@ ul.skills-list li {
   .project-two svg {
     margin-bottom: 33px;
   }
+
+  .contact-grid-container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  
 }

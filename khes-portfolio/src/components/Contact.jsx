@@ -25,6 +25,7 @@ const Contact = () => {
           <section></section>
         </div>
       </div>
+      <footer></footer>
     </>
   );
 };
