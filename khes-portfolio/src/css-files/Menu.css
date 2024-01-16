@@ -4,39 +4,80 @@
   margin-left: 0px;
   color: white;
   background-color: black;
+  position: sticky;
+  top: 0;
 }
 
 .menu-header-name {
   position: relative;
-  bottom: 2px;
+  /* top: 5px; */
   left: 5px;
-  font-size: 15px;
+  font-size: 16px;
+}
+
+div.info-bar ul {
+  display: flex;
 }
 
 div.info-bar ul li {
   list-style-type: none;
+  padding: 1px 1px 1px 1px;
+  border-radius: 20%;
 }
 
-@media screen and (max-width: 600px) {
-  div.info-bar ul li {
+div.info-bar ul li:not(.active).hover {
+  background-color: blue;
+}
+
+/* Used to hover over the link once it is clicked */
+/* .active {
+  background-color: gray;
+} */
+
+@media screen and (max-width: 625px) {
+  .menu-bar {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  nav.menu-titles {
+    width: 100%;
+  }
+
+  nav div.info-bar ul {
     display: none;
+    padding-left: 0px;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  nav div.info-bar ul.open {
+    display: flex; 
+  }
+
+  nav div.info-bar ul li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    text-align: center;
   }
 
   .menu-bar-icon {
     font-size: 22px;
-    position: relative;
-    top: 8px;
+    position: absolute;
+    top: 11px;
     right: 10px;
   }
 }
 
-@media screen and (min-width: 600px) {
-  .menu-bar {
+@media screen and (min-width: 625px) {
+  /* .menu-bar {
     display: flex;
-  }
+  } */
 
   .menu-header-name {
-    font-size: 16px;
+    top: -1px;
   }
 
   .info-bar {
@@ -61,14 +102,18 @@ div.info-bar ul li {
   .menu-bar-icon {
     display: none;
   }
+
+  /* div.dropdown-menu {
+    display: none; 
+  } */
 }
 
 @media screen and (min-width: 1100px) {
   .menu-header-name {
     top: 1px;
   }
-  
+
   div.info-bar ul li {
-    font-size: 18px; 
+    font-size: 18px;
   }
 }

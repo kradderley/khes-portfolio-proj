@@ -66,6 +66,7 @@ ul.skills-list li {
 .project-one,
 .project-two,
 .project-three {
+  margin-bottom: 30px;
   padding: 50px 30px 35px 30px;
   border: 0.5px solid black;
   border-radius: 5%;
@@ -79,6 +80,14 @@ ul.skills-list li {
   padding: 20px 20px 20px 20px;
   border: 1px solid black;
   border-radius: 5%;
+}
+
+@media screen and (min-width: 550px) {
+  .projects-container,
+  .contact-container {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -119,6 +128,12 @@ ul.skills-list li {
     display: grid;
     grid-template-columns: 2fr 2fr;
   }
+
+  .project-one,
+  .project-two,
+  .project-three {
+    padding-bottom: 5px;
+  }
 }
 
 @media screen and (min-width: 800px) {
@@ -128,6 +143,12 @@ ul.skills-list li {
   .contact-container {
     margin-left: 100px;
     margin-right: 100px;
+  }
+
+  .projects-container,
+  .contact-container {
+    margin-left: 200px;
+    margin-right: 200px;
   }
 
   .about-heading,
