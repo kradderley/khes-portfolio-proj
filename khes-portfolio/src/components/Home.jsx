@@ -4,7 +4,7 @@ import "../css-files/Home.css";
 const Home = () => {
   return (
     <>
-      <div className="home-page">
+      <div className="home-page" id="menu-home">
         <section className="social-media-grid-column">
           <div>
             <img

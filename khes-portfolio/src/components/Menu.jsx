@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 import { Router, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -13,31 +14,46 @@ const Menu = () => {
         <nav>
           <p className="menu-header-name">
             {" "}
-            <NavLink to="/">Khes Adderley</NavLink>
+            <Link to="menu-home" smooth offset={-100} duration={1000}>
+              Khes Adderley
+            </Link>
           </p>
         </nav>
         <nav className="menu-titles">
-          <div className="menu-bar-icon" onClick={() => {
-            setOpenMenu(!openMenu)
-          }}>
+          <div
+            className="menu-bar-icon"
+            onClick={() => {
+              setOpenMenu(!openMenu);
+            }}
+          >
             <FontAwesomeIcon icon={faBars} />
           </div>
           <div className="info-bar">
             <ul className={openMenu ? "open" : ""}>
               <li>
-                <NavLink to="/">Home</NavLink>
+                <Link to="menu-home" smooth offset={-100} duration={1000}>
+                  Home
+                </Link>
               </li>
               <li>
-                <NavLink to="/">About</NavLink>
+                <Link to="menu-about" smooth offset={-150} durations={1000}>
+                  About
+                </Link>
               </li>
               <li>
-                <NavLink to="/">Skills</NavLink>
+                <Link to="menu-skills" smooth offset={-100} durations={1000}>
+                  Skills
+                </Link>
               </li>
               <li>
-                <NavLink to="/">Projects</NavLink>
+                <Link to="menu-projects" smooth offset={-100} durations={1000}>
+                  Projects
+                </Link>
               </li>
               <li>
-                <NavLink to="/">Contact</NavLink>
+                <Link to="menu-contact" smooth offset={-100} durations={1000}>
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
