@@ -4,6 +4,10 @@
   height: 100vh; 
 }
 
+img.send {
+  padding-left: 10px; 
+}
+
 
 @media screen and (max-width: 800px) {
   .home-page {
@@ -31,6 +35,11 @@
   .home-button {
     display: flex;
     justify-content: center;
+  }
+
+  .resume-headshot {
+    margin-top: 50px; 
+    margin-bottom: 10px;
   }
 
   .headshot {
@@ -78,10 +87,6 @@
     align-content: center;
   
   }
-
-  /* section.social-media-grid-column div {
-    overflow: auto; 
-  } */
 
   .social-media-grid-column {
     display: flex;

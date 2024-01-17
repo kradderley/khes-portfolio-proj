@@ -1,22 +1,48 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../css-files/Home.css";
 
 const Home = () => {
+  const sayHello = () => {
+    window.open("https://www.linkedin.com/in/khesadderley/");
+    console.log("Clicked");
+  };
+
   return (
     <>
       <div className="home-page" id="menu-home">
         <section className="social-media-grid-column">
           <div>
-            <img
-              className="social-media-icon"
-              src="../src/images/linkedin.svg"
-              alt="linkedin"
-            />
-            <img
-              className="social-media-icon"
-              src="../src/images/instagram.svg"
-              alt="instagram"
-            />
+            <Link
+              to={"https://www.linkedin.com/in/khesadderley/"}
+              target="_blank"
+            >
+              <img
+                className="social-media-icon"
+                src="../src/images/linkedin.svg"
+                alt="linkedin"
+              />
+            </Link>
+            <Link
+              to={"https://www.instagram.com/thekhesadderley/"}
+              target="_blank"
+            >
+              <img
+                className="social-media-icon"
+                src="../src/images/instagram.svg"
+                alt="instagram"
+              />
+            </Link>
+            <Link
+              to={"https://github.com/kradderley?tab=repositories/"}
+              target="_blank"
+            >
+              <img
+                className="social-media-icon"
+                src="../src/images/github-com.svg"
+                alt="github-repo"
+              />
+            </Link>
           </div>
         </section>
         <section>
@@ -30,10 +56,23 @@ const Home = () => {
             </p>
             <br />
             <div className="home-button-container">
-              <button className="home-button">
+              <button onClick={sayHello} className="home-button">
                 Say Hello
                 <img className="send" src="../src/images/send.svg" alt="Send" />
               </button>
+            </div>
+            <br />
+            <div className="home-button-container">
+              <a href="Khes Adderley CV" download="KhesAdderley_CV.pdf">
+                <button className="home-button">
+                  Download CV
+                  <img
+                    className="send"
+                    src="../src/images/download.svg"
+                    alt="Download"
+                  />
+                </button>
+              </a>
             </div>
           </div>
         </section>
@@ -48,16 +87,36 @@ const Home = () => {
         </section>
         <section>
           <div className="social-media-container">
-            <img
-              className="social-media-icon"
-              src="../src/images/linkedin.svg"
-              alt="linkedin"
-            />
-            <img
-              className="social-media-icon"
-              src="../src/images/instagram.svg"
-              alt="instagram"
-            />
+            <Link
+              to={"https://www.linkedin.com/in/khesadderley/"}
+              target="_blank"
+            >
+              <img
+                className="social-media-icon"
+                src="../src/images/linkedin.svg"
+                alt="linkedin"
+              />
+            </Link>
+            <Link
+              to={"https://www.instagram.com/thekhesadderley/"}
+              target="_blank"
+            >
+              <img
+                className="social-media-icon"
+                src="../src/images/instagram.svg"
+                alt="instagram"
+              />
+            </Link>
+            <Link
+              to={"https://github.com/kradderley?tab=repositories/"}
+              target="_blank"
+            >
+              <img
+                className="social-media-icon"
+                src="../src/images/github-com.svg"
+                alt="github-repo"
+              />
+            </Link>
           </div>
         </section>
       </div>

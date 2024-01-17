@@ -9,6 +9,8 @@ const Contact = () => {
       <div className="contact-container" id="menu-contact">
         <h1 className="contact-heading">Contact</h1>
         <h3 className="contact-subheading">Let's Get In Touch</h3>
+        <h4> Feel free to reach out to me, even if it's just to say "Hello!". I'm looking forward to hearing from you. </h4>
+
         <div className="contact-grid-container">
           <section className="contact-item">
             <FontAwesomeIcon icon={faEnvelope} />
