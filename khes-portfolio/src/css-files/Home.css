@@ -127,10 +127,10 @@ img.send {
 
 @media screen and (min-width: 1100px) {
   .home-page {
-   
-   
-    margin-left: 75px; 
-    margin-right: 75px;
+    /* margin-left: 75px; 
+    margin-right: 75px; */
+    max-width: 1250px;
+    margin: 0 auto; 
   }
 
   .home-statement {

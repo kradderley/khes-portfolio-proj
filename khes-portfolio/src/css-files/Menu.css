@@ -52,8 +52,12 @@ div.info-bar ul li:not(.active).hover {
     margin-bottom: 40px;
   }
 
+  /* .menu-bar-icon-close {
+    display: none;
+  } */
+
   nav div.info-bar ul.open {
-    display: flex; 
+    display: flex;
   }
 
   nav div.info-bar ul li {
@@ -103,9 +107,9 @@ div.info-bar ul li:not(.active).hover {
     display: none;
   }
 
-  /* div.dropdown-menu {
-    display: none; 
-  } */
+  .menu-bar-icon-close {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1100px) {

@@ -1,5 +1,4 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
 import Menu from "./components/Menu";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -16,13 +15,7 @@ const App = () => {
       <Skills />
       <Projects />
       <Contact />
-      {/* <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="" element={<About />} />
-        <Route path="" element={<Skills />} />
-        <Route path="" element={<Projects />} />
-        <Route path="" element={<Contact />} />
-      </Routes> */}
+    
     </>
   );
 };

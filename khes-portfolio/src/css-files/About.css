@@ -72,9 +72,15 @@ ul.skills-list li {
 .project-two,
 .project-three {
   margin-bottom: 30px;
-  padding: 50px 30px 35px 30px;
+  padding: 50px 30px 50px 30px;
   border: 0.5px solid black;
   border-radius: 5%;
+}
+
+.arrow {
+  padding-left: 10px;
+  position: relative;
+  top: 4px;
 }
 
 .contact-item {
@@ -85,6 +91,10 @@ ul.skills-list li {
   padding: 20px 20px 20px 20px;
   border: 1px solid black;
   border-radius: 5%;
+}
+
+.about-image {
+  width: 100%;
 }
 
 @media screen and (min-width: 550px) {
@@ -197,9 +207,12 @@ ul.skills-list li {
 @media screen and (min-width: 1000px) {
   .about-container {
     /* margin-top: 250px; */
-    margin-left: 150px;
+    /* margin-left: 150px;
     margin-right: 150px;
-    margin-bottom: 250px;
+    margin-bottom: 250px; */
+    max-width: 1250px;
+    margin: 0 auto;
+    height: 100vh;
   }
 
   .about-grid-container {
@@ -207,13 +220,20 @@ ul.skills-list li {
     grid-template-columns: 2fr 2fr;
   }
 
+  .grid-image {
+    text-align: right;
+  }
+
   .skills-container,
   .projects-container,
   .contact-container {
-    margin-top: 250px;
+    /* margin-top: 250px;
     margin-left: 90px;
     margin-right: 90px;
-    margin-bottom: 250px;
+    margin-bottom: 250px; */
+    max-width: 1250px;
+    margin: 0 auto;
+    height: 100vh;
   }
 
   .skills-grid-container {

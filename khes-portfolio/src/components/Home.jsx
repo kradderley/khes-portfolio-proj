@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import resume from "../images/KhesAdderley_CV.pdf";
 import "../css-files/Home.css";
 
 const Home = () => {
   const sayHello = () => {
     window.open("https://www.linkedin.com/in/khesadderley/");
-    console.log("Clicked");
   };
 
   return (
@@ -63,7 +63,7 @@ const Home = () => {
             </div>
             <br />
             <div className="home-button-container">
-              <a href="Khes Adderley CV" download="KhesAdderley_CV.pdf">
+              <a href={resume} download="Khes Adderley CV">
                 <button className="home-button">
                   Download CV
                   <img

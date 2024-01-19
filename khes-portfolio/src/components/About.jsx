@@ -8,11 +8,13 @@ const About = () => {
         <h1 className="about-heading">About Me</h1>
         <h3 className="about-subheading">Introduction</h3>
         <div className="about-grid-container">
-          <img
-            className="about-image"
-            src="../src/images/girl-web-developer.svg"
-            alt="web-developer"
-          />
+          <div className="grid-image">
+            <img
+              className="about-image"
+              src="../src/images/girl-web-developer.svg"
+              alt="web-developer"
+            />
+          </div>
           <section className="about-info-section">
             <h3>A committed web developer based in Paris, France</h3>
             <p>

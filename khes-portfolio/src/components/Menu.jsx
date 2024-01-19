@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { Router, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import "../css-files/Menu.css";
 
 const Menu = () => {
@@ -28,6 +28,11 @@ const Menu = () => {
           >
             <FontAwesomeIcon icon={faBars} />
           </div>
+          {/* <div
+            className="menu-bar-icon"
+          >
+            <FontAwesomeIcon icon={faXmark} />
+          </div> */}
           <div className="info-bar">
             <ul className={openMenu ? "open" : ""}>
               <li>
@@ -36,22 +41,22 @@ const Menu = () => {
                 </Link>
               </li>
               <li>
-                <Link to="menu-about" smooth offset={-150} durations={1000}>
+                <Link to="menu-about" smooth offset={-200} durations={1000}>
                   About
                 </Link>
               </li>
               <li>
-                <Link to="menu-skills" smooth offset={-100} durations={1000}>
+                <Link to="menu-skills" smooth offset={-175} durations={1000}>
                   Skills
                 </Link>
               </li>
               <li>
-                <Link to="menu-projects" smooth offset={-100} durations={1000}>
+                <Link to="menu-projects" smooth offset={-175} durations={1000}>
                   Projects
                 </Link>
               </li>
               <li>
-                <Link to="menu-contact" smooth offset={-100} durations={1000}>
+                <Link to="menu-contact" smooth offset={-175} durations={1000}>
                   Contact
                 </Link>
               </li>
