@@ -16,10 +16,6 @@ li {
   text-align: center;
 }
 
-/* .about-container {
-  margin-top: 0px;
-} */
-
 .about-heading,
 .skills-heading,
 .projects-heading,
@@ -95,6 +91,29 @@ ul.skills-list li {
 
 .about-image {
   width: 100%;
+}
+
+.contact-form-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+input,
+textarea {
+  margin-top: 20px;
+  padding-top: 10px; 
+  padding-bottom: 10px;
+  text-align: center;
 }
 
 @media screen and (min-width: 550px) {
@@ -205,9 +224,12 @@ ul.skills-list li {
 }
 
 @media screen and (min-width: 1000px) {
-  .about-container {
-    /* margin-top: 250px; */
-    /* margin-left: 150px;
+  .about-container,
+  .skills-container,
+  .projects-container,
+  .contact-container {
+    /* margin-top: 250px;
+    margin-left: 150px;
     margin-right: 150px;
     margin-bottom: 250px; */
     max-width: 1250px;
@@ -224,16 +246,16 @@ ul.skills-list li {
     text-align: right;
   }
 
-  .skills-container,
-  .projects-container,
-  .contact-container {
-    /* margin-top: 250px;
-    margin-left: 90px;
-    margin-right: 90px;
-    margin-bottom: 250px; */
-    max-width: 1250px;
-    margin: 0 auto;
-    height: 100vh;
+  .about-image {
+    width: 500px;
+  }
+
+  .about-info-section h3 {
+    font-size: 30px;
+  }
+
+  .about-info-section p {
+    font-size: 20px;
   }
 
   .skills-grid-container {
