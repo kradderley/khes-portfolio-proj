@@ -28,11 +28,7 @@ const Menu = () => {
           >
             <FontAwesomeIcon icon={faBars} />
           </div>
-          {/* <div
-            className="menu-bar-icon"
-          >
-            <FontAwesomeIcon icon={faXmark} />
-          </div> */}
+
           <div className="info-bar">
             <ul className={openMenu ? "open" : ""}>
               <li>

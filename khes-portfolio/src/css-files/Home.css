@@ -6,6 +6,12 @@
 
 img.send {
   padding-left: 10px; 
+  position: relative;
+  top:  4px;
+}
+
+img.send:hover {
+  color: white; 
 }
 
 

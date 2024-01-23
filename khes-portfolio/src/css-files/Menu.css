@@ -10,29 +10,25 @@
 
 .menu-header-name {
   position: relative;
-  /* top: 5px; */
   left: 5px;
   font-size: 16px;
 }
 
-div.info-bar ul {
+/* div.info-bar ul {
   display: flex;
-}
+} */
 
-div.info-bar ul li {
+.info-bar ul li {
   list-style-type: none;
   padding: 1px 1px 1px 1px;
-  border-radius: 20%;
+  border-color: white;
 }
 
-div.info-bar ul li:not(.active).hover {
-  background-color: blue;
+.info-bar ul li a:hover, 
+.menu-header-name a:hover {
+  font-weight: bold;
+  color: white;
 }
-
-/* Used to hover over the link once it is clicked */
-/* .active {
-  background-color: gray;
-} */
 
 @media screen and (max-width: 625px) {
   .menu-bar {
